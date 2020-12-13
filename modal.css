@@ -1,0 +1,61 @@
+.vmodal.open .modal-overlay,
+.vmodal.open .modal-window {
+    opacity: 1;
+    z-index: 100;
+}
+
+.vmodal.open .modal-window {
+    transform: translateY(0px);
+}
+
+.vmodal.open .modal-overlay {
+    background: rgba(0, 0, 0, .5);
+}
+
+.modal-overlay, .modal-window {
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background .5s ease-out;
+}
+
+.modal-window {
+    margin: 100px auto;
+    height: 200px;
+    width: 600px;
+    border-radius: 5px;
+    background: #fff;
+    transform: translateY(-200px);
+    transition: transform .5s ease-out
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
